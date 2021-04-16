@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #222;
+}
+
+.header {
+  color: rgba(0, 0, 0, 0.87);
+  list-style-type: none;
+  align-items: center;
+  text-decoration: none;
+  line-height: normal;
+  font-size: 13px;
+  height: 34px;
+  padding: 6px;
+
+}
+
+.headerli {
+  float: right;
+}
+
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  margin: 92px;
+}
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: -77px;
+  width: 582px;
+  border-radius: 24px;
+}
+
+.search-area:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 10px 0 16px;
+  padding-left: 14px;
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  width: 99%;
+  border: none;
+}
+
+.googlesearch,
+.feelinglucky {
+  background-color: #f8f9fa;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 20px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #f2f2f2;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 10px;
+  border-bottom: 1px solid #dadce0;
+}
+
+.footerli {
+  float: left;
+  list-style-type: none;
+}
+
+.footerli a,
+.footer-top {
+  display: block;
+  color: #70757a;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+  border-bottom: 1px solid #dadce0;
+
+}
+
+
+.footerli a:hover {
+  text-decoration: underline;
+}
+
+.voice-img,
+.tia-img {
+  width: 26px;
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+  padding: 0.3em;
+}
+
+[aria-label] {
+  position: relative;
+}
+
+[aria-label]:after {
+  position: absolute;
+  content: attr(aria-label);
+  background-color: #222;
+  color: #fff;
+  display: none;
+  top: 110%;
+  right: -40px;
+  z-index: 5000;
+  padding: 5px;
+  pointer-events: none;
+  line-height: 15px;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+[aria-label]:hover:before {
+  top: 100%;
+  right: 0;
+  left: 0;
+  margin: -16px auto 0;
+  display: block;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #222;
+  border-width: 16px;
+}
+
+
+a:focus {
+  outline: 1px dashed #E92C6C;
+}
+
+[aria-label]:hover:after,
+[aria-label]:focus:after {
+  display: block;
+}
+
+.googlesearch:hover,
+.feelinglucky:hover {
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 24%), 0 3px 2px 0 rgb(0 0 0 / 19%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
